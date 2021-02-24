@@ -9,7 +9,7 @@ window.onload = function() {
 		let element = document.createElement("option");
 		element.value = country;
 		element.innerHTML = country;
-        //This add the element to #mySelect
+		//This add the element to #mySelect
 		select.appendChild(element);
 	});
 

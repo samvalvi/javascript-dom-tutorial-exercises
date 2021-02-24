@@ -2,7 +2,7 @@ let button = document.querySelector("#superDuperButton");
 
 button.addEventListener("click", function() {
 	//your code here
-	//This create the body and asign the background color.
+	//This create the div and asign the background color.
 	let object = document.createElement("div");
 	object.innerHTML = "Hello World";
 	object.style.backgroundColor = "yellow";
