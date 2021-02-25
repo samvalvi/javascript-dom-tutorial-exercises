@@ -12,12 +12,12 @@ function addTask(event) {
 		span.innerHTML = `<i class="fa fa-trash"></i> ${event.target.value}`;
 		elementList.appendChild(span);
 		unsortedList.appendChild(elementList);
-		console.log("Enter was press");
 	}
 }
 
-unsortedList.addEventListener('mousedown');
+unsortedList.addEventListener("click", deleteTask);
 
 function deleteTask(event) {
-    
+	let list = document.querySelectorAll("ul li");
+	
 }
