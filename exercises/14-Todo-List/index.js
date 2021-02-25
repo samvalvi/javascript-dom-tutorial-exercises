@@ -10,10 +10,10 @@ function addTask(event) {
 		let elementList = document.createElement("li");
 		let span = document.createElement("span");
 
-		// generando boton de bazura
+		// generando boton de basura
 		let deleteButton = document.createElement("i");
 		deleteButton.className = "fa fa-trash";
-		deleteButton.innerHTML = `${event.target.value}`;
+		deleteButton.innerHTML = ` ${event.target.value}`;
 
 		// agregando funcionalidad de boton onClick
 		deleteButton.addEventListener("click", () => {
@@ -29,4 +29,3 @@ function addTask(event) {
 		unsortedList.appendChild(elementList);
 	}
 }
-
