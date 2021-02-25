@@ -1,19 +1,14 @@
 // Your code here
 let addElement = document.getElementById("addToDo");
-let unsortedList = document.getElementsByTagName("UL");
+let unsortedList = document.querySelector("ul");
 
-addElement.addEventListener('change', addTask);
+addElement.addEventListener("keydown", addTask);
 
-const addTask = (event) => {
-	let element = document.createElement("li");
-	element.innerHTML = event.target.value;
+const addTask = event => {
+	let elementList = document.createElement("li");
+	let span = document.createElement("span");
 
-	list.appendChild(element);
+	span.innerHTML = `<i class="fa fa-trash"></i>${event.target.value}`;
+	elementList.appendChild(span);
+	unsortedList.appendChild(elementList);
 };
-
-
-unsortedList.addEventListener('click', deleteTask);
-
-const deleteTask = (event) => {
-    
-}
